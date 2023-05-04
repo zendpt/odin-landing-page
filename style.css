@@ -12,9 +12,9 @@ body {
 
 header {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
-	padding: 0 256px;
+	padding: 0 16px;
 }
 
 ul {
@@ -42,13 +42,24 @@ main {
 .banner {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: center;
 	gap: 32px;
-	padding: 128px 256px;
+	padding: 10em 0;
+	flex-wrap: wrap;
+}
+
+.hero-text {
+	max-width: 500px;
+	min-width: 300px;
 }
 
 .hero-text p{
  	margin: 0 0 18px;
+}
+
+.banner-image img {
+	width: 550px;
+	height: auto;
 }
 
 button {
@@ -71,8 +82,8 @@ button {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 0px 256px 32px;
 	background-color: white;
+	padding: 2em;
 }
 
 .info-cards {
@@ -109,7 +120,11 @@ section div {
 	background-color: #e5e7eb;
 	color: #1f2937;
 	margin: 0;
-	padding: 96px 380px;
+	padding: 10em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 
 .testimonial .quote {
@@ -118,14 +133,15 @@ section div {
 	font-size: 36px;
 	font-style: italic;
 	font-weight: 300;
+	max-width: 800px;
+	min-width: 450px;
 }
 
 #thor {
 	margin: 0px;
 	font-size: 28px;
 	font-weight: bolder;
-	text-align: right;
-	padding: 0 64px 0 0;
+	padding: 0 0 0 15em;
 }
 
 .cta {
@@ -140,9 +156,11 @@ section div {
 	background-color: #3882F6;
 	border-radius: 10px;
 	display: flex;
-	padding: 64px 128px;
-	justify-content: space-around;
-	gap: 64px;
+	padding: 64px;
+	width: 60em;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	gap: 16px;
 }
 
 .container h3 {
